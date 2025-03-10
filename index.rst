@@ -14,7 +14,7 @@ This document outlines the workflow for Science Verification (SV) Units in the R
 ************
 Introduction
 ************
-Science Verification (SV) is critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV requirements.
+Science Verification is critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV requirements.
 
 **Scope:** This workflow is intended for commissioning team members, data scientists, and software engineers working on SV-related tasks.  
 
@@ -25,9 +25,9 @@ Science Verification Workflow Overview
 ******************************************
 SV units ensure that the Rubin Observatory meets its scientific performance goals. The workflow includes defining goals, acquiring data, processing it, and validating results.
 
-***************
+
 Workflow Steps
-***************
+--------------
 1. **Defining Science Verification Goals**  
    - Identify key performance metrics  
    - Align with science requirements  
