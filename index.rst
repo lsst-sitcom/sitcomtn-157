@@ -20,9 +20,9 @@ Science Verification is critical for assessing the performance and accuracy of R
 
 **Relation to other documentation:** This document complements other SITCOMTNs and DMTNs on commissioning workflows.
 
-******************************************
 Science Verification Workflow Overview
-******************************************
+======================================
+
 SV units ensure that the Rubin Observatory meets its scientific performance goals. The workflow includes defining goals, acquiring data, processing it, and validating results.
 
 
