@@ -11,9 +11,9 @@ Abstract
 **********
 This document outlines the workflow for Science Verification (SV) Units in the Rubin Observatory commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and validation.
 
-**********
+************
 Introduction
-**********
+************
 Science Verification (SV) is critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV requirements.
 
 **Scope:** This workflow is intended for commissioning team members, data scientists, and software engineers working on SV-related tasks.  
