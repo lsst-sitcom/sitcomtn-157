@@ -9,7 +9,7 @@ Science Verification workflow
 **********
 Abstract
 **********
-This document outlines the workflow for Science Verification (SV) Units in the Rubin Observatory commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and validation.
+This document outlines the workflow for Science Verification (SV) Units in the Rubin Observatory commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and validation. It is based on the procedures defined in the System-level Science Performance Verification Sprint (February 2025) and focuses on tracking verification tickets, managing test cases, and generating verification artifacts.
 
 ************
 Introduction
@@ -32,7 +32,7 @@ Workflow Steps
    - Identify key performance metrics  
    - Align with science requirements  
 
-2. **Selecting and Preparing SV Units**  
+2. **Selecting and Preparing SV**  
    - Choose relevant test cases  
    - Configure necessary software and hardware  
 
