@@ -2,11 +2,6 @@
 Science Verification workflow
 #############################
 
-.. abstract::
-
-   This TN is a guid trough the science verification (SV) Jira workflow.
-
-
 .. contents:: Table of Contents
    :depth: 2
    :local:
@@ -19,7 +14,7 @@ This document outlines the workflow for Science Verification (SV) Units in the R
 **********
 Introduction
 **********
-Science Verification (SV) Units are critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV units.
+Science Verification (SV) is critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV requirements.
 
 **Scope:** This workflow is intended for commissioning team members, data scientists, and software engineers working on SV-related tasks.  
 
