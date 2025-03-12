@@ -24,7 +24,7 @@ Science Verification is critical for assessing the performance and accuracy of R
 Science Verification Workflow Overview
 **************************************
 
-SV units ensure that the Rubin Observatory meets its scientific performance goals. The workflow includes defining goals, acquiring data, processing it, and validating results.
+SV ensure that the Rubin Observatory meets its scientific performance goals. The workflow includes defining goals, acquiring data, processing it, and validating results.
 
 
 Workflow Steps
@@ -62,7 +62,7 @@ Verification Ticket Workflow
 Selecting a Verification Ticket
 -------------------------------
 
-- Go to the Kanban board and select a verification ticket in the "To Do" column.
+- Go to the `Kanban board <https://rubinobs.atlassian.net/jira/software/c/projects/LVV/boards/904>`_ or the `SV JIRA dashboard <https://rubinobs.atlassian.net/jira/dashboards/10183>`_ and select a verification ticket in the "To Do" column or "covered" ticket respectivelly.
 - Use the "Quick filter" feature to view only the tickets for a specific Science Unit.
 - For verification tickets that might need a change request:
   - Add the "ChangeRequested" label.
