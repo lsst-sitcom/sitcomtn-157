@@ -9,7 +9,7 @@ Science Verification workflow
 **********
 Abstract
 **********
-This document outlines the workflow for Science Verification (SV) Units in the Rubin Observatory commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and validation. It is based on the procedures defined in the System-level Science Performance Verification Sprint (February 2025) and focuses on tracking verification tickets, managing test cases, and generating verification artifacts.
+This document outlines the workflow for Science Verification (SV) Units in the Rubin Observatory commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and validation. It is based on the procedures defined in the `System-level Science Performance Verification Sprint<https://rubinobs.atlassian.net/wiki/spaces/LSSTCOM/pages/372867091/System-level+Science+Performance+Verification+Sprint>`_ (February 2025) and focuses on tracking verification tickets, managing test cases, and generating verification artifacts.
 
 ************
 Introduction
