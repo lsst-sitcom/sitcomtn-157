@@ -31,32 +31,32 @@ Workflow Steps
 ==============
 
 1. **Defining Science Verification Goals**  
-   - Identify key performance metrics   
-   - Align with science requirements 
+   - Identify key performance metrics \  
+   - Align with science requirements \
    - This step is done by the SE team
 
 2. **Selecting and Preparing SV**  
-   - Choose/Make relevant test cases, test cycles, and test plans  
-   -  This step will be done by Keith B. and Marina P.
+   - Choose/Make relevant test cases, test cycles, and test plans \ 
+   -  This step will be done by Keith Bechtol and Marina Pavlovic
 
 3. **Data Acquisition & Observing Strategy**  
-   - Execute planned observations  
+   - Execute planned observations  \
    - SV tickets will be chosen by the previously acquired data 
 
 4. **Data Processing & Reduction**  
-   - Use LSST Science Pipelines for processing  
-   - Make the artifacts for SV (notebooks etc)
-   - This is the main task of the SV units
+   - Use LSST Science Pipelines for processing  \
+   - Make the artifacts for SV (notebooks etc) \
+   - This is the main task of the SV units 
 
 5. **Performance Metrics & Validation**  
-   - Compare results with expectations  
-   - Report anomalies and iterate on improvements  
+   - Compare results with expectations  \
+   - Report anomalies and iterate on improvements  \
    - This is the task of the SV units
 
 6. **Reporting & Documentation**  
-   - Summarize findings in SITCOMTNs and JIRA tickets  
-   - Communicate results with relevant teams  
-   - This is the final task of the SV units 
+   - Summarize findings in SITCOMTNs and JIRA tickets  \
+   - Communicate results with relevant teams  \
+   - This is the final task of the SV units \
    - Tickets are forwarded to the SE team after this step
 
 Verification JIRA Workflow
