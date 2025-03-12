@@ -62,7 +62,7 @@ Verification Ticket Workflow
 Selecting a Verification Ticket
 -------------------------------
 
-- Go to the `Kanban board <https://rubinobs.atlassian.net/jira/software/c/projects/LVV/boards/904>`_ or the `SV JIRA dashboard <https://rubinobs.atlassian.net/jira/dashboards/10183>`_ and select a verification ticket in the "To Do" column or "covered" ticket respectivelly.
+- Go to the `Kanban board <https://rubinobs.atlassian.net/jira/software/c/projects/LVV/boards/904>`_ or the `SV JIRA dashboard <https://rubinobs.atlassian.net/jira/dashboards/10183>`_ and select a verification ticket in the "To Do" column or "covered" ticket respectively.
 - Use the "Quick filter" feature to view only the tickets for a specific Science Unit.
 - For verification tickets that might need a change request:
   - Add the "ChangeRequested" label.
@@ -82,7 +82,7 @@ Starting Work on the Ticket
 Creating the Jupyter Notebook
 -----------------------------
 
-- Navigate to the `notebooks` directory in the Git repository (see Git repo mapping).
+- Navigate to the `notebooks` directory in the Git repository (see `Git repo mapping <https://rubinobs.atlassian.net/wiki/spaces/LSSTCOM/pages/372867091/System-level+Science+Performance+Verification+Sprint>`_).
 - Name the notebook as `test_LVV-T***.ipynb`, replacing `***` with the Test Case number associated with the verification ticket under "Linked issues."
 - Create a new branch in the Git repository:
   - Use the branch name `tickets/lvv-****`, replacing `****` with the verification ticket number.
