@@ -16,7 +16,7 @@ Introduction
 ************
 Science Verification is critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV requirements.
 
-**Scope:** This workflow is intended for commissioning team members, data scientists, and software engineers working on SV-related tasks.  
+**Scope:** This workflow is intended for commissioning team members, data scientists, and software engineers working on SV-related tasks.
 
 **Relation to other documentation:** This document complements other SITCOMTNs and DMTNs on commissioning workflows.
 
@@ -30,35 +30,35 @@ SV ensure that the Rubin Observatory meets its scientific performance goals. The
 Workflow Steps
 ==============
 
-1. **Defining Science Verification Goals**  
+1. **Defining Science Verification Goals**
 
-   - Identify key performance metrics \  
+   - Identify key performance metrics \
    - Align with science requirements \
    - This step is done by the SE team
 
-2. **Selecting and Preparing SV**  
+2. **Selecting and Preparing SV**
 
-   - Choose/Make relevant test cases, test cycles, and test plans \ 
+   - Choose/Make relevant test cases, test cycles, and test plans \
    -  This step will be done by Keith Bechtol and Marina Pavlovic
 
-3. **Data Acquisition & Observing Strategy**  
+3. **Data Acquisition & Observing Strategy**
 
    - Execute planned observations  \
-   - SV tickets will be chosen by the previously acquired data 
+   - SV tickets will be chosen by the previously acquired data
 
-4. **Data Processing & Reduction**  
+4. **Data Processing & Reduction**
 
    - Use LSST Science Pipelines for processing  \
    - Make the artifacts for SV (notebooks etc) \
-   - This is the main task of the SV units 
+   - This is the main task of the SV units
 
-5. **Performance Metrics & Validation**  
+5. **Performance Metrics & Validation**
 
    - Compare results with expectations  \
    - Report anomalies and iterate on improvements  \
    - This is the task of the SV units
 
-6. **Reporting & Documentation**  
+6. **Reporting & Documentation**
 
    - Summarize findings in SITCOMTNs and JIRA tickets  \
    - Communicate results with relevant teams  \
@@ -124,17 +124,17 @@ Updating Ticket Status
 *************************
 Tools and Software Used
 *************************
-- **Rubin Science Platform (RSP)** – Interactive data analysis  
-- **Jupyter Notebooks** – Workflow execution  
-- **EFD & Chronograf** – Engineering and telemetry monitoring  
-- **JIRA** – Task tracking, issue management, and workflow coordination  
+- **Rubin Science Platform (RSP)** – Interactive data analysis
+- **Jupyter Notebooks** – Workflow execution
+- **EFD & Chronograf** – Engineering and telemetry monitoring
+- **JIRA** – Task tracking, issue management, and workflow coordination
 - **Zephyr Scale** – Test case management and execution tracking for SV workflows
 
 **********
 References
 **********
-- SITCOMTN-XXX (related documents)  
-- DMTN-XXX (relevant Data Management notes)  
+- SITCOMTN-XXX (related documents)
+- DMTN-XXX (relevant Data Management notes)
 
 **********
 Appendix
