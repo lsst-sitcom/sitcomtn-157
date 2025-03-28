@@ -1,5 +1,5 @@
 #############################
-Science Verification workflow
+System-level Science Verification Workflow
 #############################
 
 .. contents:: Table of Contents
@@ -9,14 +9,14 @@ Science Verification workflow
 **********
 Abstract
 **********
-This document outlines the workflow for Science Verification (SV) Units in the Rubin Observatory commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and validation. It is based on the procedures defined in the `System-level Science Performance Verification Sprint <https://rubinobs.atlassian.net/wiki/spaces/LSSTCOM/pages/372867091/System-level+Science+Performance+Verification+Sprint>`_ (February 2025) and focuses on tracking verification tickets, managing test cases, and generating verification artifacts.
+This document outlines the workflow for system-level Science Verification (SV) during the Rubin Observatory on-sky commissioning phase. It details the steps involved, tools used, and integration with existing systems. A key focus of this document is on the **JIRA and Zephyr Scale workflows** used for tracking SV tasks, test execution, and final verification. It is based on the procedures defined in the `System-level Science Performance Verification Sprint <https://rubinobs.atlassian.net/wiki/spaces/LSSTCOM/pages/372867091/System-level+Science+Performance+Verification+Sprint>`_ (February 2025) and focuses on tracking verification tickets, managing test cases, and generating verification artifacts.
 
 ************
 Introduction
 ************
-Science Verification is critical for assessing the performance and accuracy of Rubin's scientific workflows. This document provides a structured approach to defining, executing, and validating SV requirements.
+Science Verification (SV) is critical for assessing the performance and accuracy of Rubin's scientific workflows with respect to normative requirements. This document provides a structured approach to defining, executing, and validating SV requirements.
 
-**Scope:** This workflow is intended for commissioning team members, data scientists, and software engineers working on SV-related tasks.
+**Scope:** This workflow is intended for commissioning team members, scientists engaged in data processing and science performance analysis, and software engineers working on SV-related tasks.
 
 **Relation to other documentation:** This document complements other SITCOMTNs and DMTNs on commissioning workflows.
 
@@ -24,7 +24,7 @@ Science Verification is critical for assessing the performance and accuracy of R
 Science Verification Workflow Overview
 **************************************
 
-SV ensure that the Rubin Observatory meets its scientific performance goals. The workflow includes defining goals, acquiring data, processing it, and validating results.
+SV ensures that the as-built Rubin Observatory is capable of meeting the scientific performance goals of the 10-year LSST survey. The workflow includes defining goals, data acquisition, data processing and analysis, and comparing results with requirement specifications.
 
 
 Workflow Steps
@@ -32,37 +32,39 @@ Workflow Steps
 
 1. **Defining Science Verification Goals**
 
-   - Identify key performance metrics \
-   - Align with science requirements \
-   - This step is done by the SE team
+   - Identify key science performance metrics to meet LSST science goals \
+   - Define system requirements aligned with key science performance metrics \
+   - This step was done by the SE team. System-level science performance requirements appear in the LSST System Requirements (LSR; LSE-29) and Observatory System Specifications (OSS; LSE-30) documents.
 
 2. **Selecting and Preparing SV**
 
-   - Choose/Make relevant test cases, test cycles, and test plans \
-   -  This step will be done by Keith Bechtol and Marina Pavlovic
+   - Assign system-level science performance requirements to Science Units \
+   - Create relevant Test Cases, Test Cycles, and Test Plans \
+   - This step will be done by Keith Bechtol and Marina Pavlovic
 
 3. **Data Acquisition & Observing Strategy**
 
-   - Execute planned observations  \
-   - SV tickets will be chosen by the previously acquired data
+   - Execute planned observations \
+   - SV tickets will be selected previously acquired data
 
 4. **Data Processing & Reduction**
 
-   - Use LSST Science Pipelines for processing  \
-   - Make the artifacts for SV (notebooks etc) \
-   - This is the main task of the SV units
+   - Use LSST Science Pipelines for data processing \
+      - In nearly all cases, standard data production campaigns are expected to be sufficient for generating all input data products for scientific analysis
+   - Create verification artifacts as the "evidence" for SV (e.g., Jupyter notebook, technote)
+   - This is the main task of the Science Units
 
 5. **Performance Metrics & Validation**
 
-   - Compare results with expectations  \
-   - Report anomalies and iterate on improvements  \
-   - This is the task of the SV units
+   - Compare metrics that describe the performance of the as-built system with requirement specifications \
+   - Report anomalies and iterate on improvements with relevant teams \
+   - This is the task of the Science Units
 
 6. **Reporting & Documentation**
 
-   - Summarize findings in SITCOMTNs and JIRA tickets  \
-   - Communicate results with relevant teams  \
-   - This is the final task of the SV units \
+   - Summarize findings in Jupyter notebooks, technotes, and/or JIRA tickets \
+   - Communicate results with relevant teams \
+   - This is the final task of the Science Units \
    - Tickets are forwarded to the SE team after this step
 
 Verification JIRA Workflow
@@ -73,7 +75,7 @@ Verification JIRA Workflow
 Selecting a Verification Ticket
 -------------------------------
 
-- Go to the `Kanban board <https://rubinobs.atlassian.net/jira/software/c/projects/LVV/boards/904>`_ or the `SV JIRA dashboard <https://rubinobs.atlassian.net/jira/dashboards/10183>`_ and select a verification ticket in the "To Do" column or "covered" ticket respectively.
+- Go to the `Kanban board <https://rubinobs.atlassian.net/jira/software/c/projects/LVV/boards/904>`_ or the `SV JIRA dashboard <https://rubinobs.atlassian.net/jira/dashboards/10183>`_ and select a verification ticket in the "To Do" column or "covered" ticket, respectively.
 - Use the "Quick filter" feature to view only the tickets for a specific Science Unit.
 - For verification tickets that might need a change request:
   - Add the "ChangeRequested" label.
@@ -84,7 +86,7 @@ Selecting a Verification Ticket
 Starting Work on the Ticket
 ---------------------------
 
-- Set yourself as the assignee using the Assignee field.
+- Set yourself as the assignee on the verification ticket using the "Assignee" field.
 - Update the Status from "Covered" to "In Verification."
 - The ticket will move to the "In Progress" column on the Kanban board.
 
@@ -93,6 +95,8 @@ Starting Work on the Ticket
 Creating the Jupyter Notebook
 -----------------------------
 
+- A Git repository has been created for each Science Unit to collect Jupyter notebooks that will be used as verification artifacts.
+   - It is acceptable to use a different Git repo if the Science Unit has already started work elsewhere.
 - Navigate to the `notebooks` directory in the Git repository (see `Git repo mapping <https://rubinobs.atlassian.net/wiki/spaces/LSSTCOM/pages/372867091/System-level+Science+Performance+Verification+Sprint>`_).
 - Name the notebook as `test_LVV-T***.ipynb`, replacing `***` with the Test Case number associated with the verification ticket under "Linked issues."
 - Create a new branch in the Git repository:
@@ -106,7 +110,7 @@ Notebook Requirements
 
 At minimum, the notebook should include:
 
-- Name of related requirement(s) and their specification.
+- Name of related requirement(s) and their specification(s).
 - Provenance information (e.g., Butler repo, collection, dataIds).
 - Results.
 - Conclusion remarks with PASS/FAIL assessment for each requirement.
